@@ -42,7 +42,9 @@ const Sidebar = () => {
         <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 mb-4">
           <div className="flex gap-2 items-center">
             <BiLibrary className="font-bold text-xl " />
-            <span className="text-lg md:text-xl hide-on-small ">Your library</span>
+            <span className="text-lg md:text-xl hide-on-small ">
+              Your library
+            </span>
           </div>
           <button className="hover:bg-black/25 rounded-full p-2">
             <FaPlus className=" hidden lg:flex font-bold text-xl" />
@@ -54,19 +56,21 @@ const Sidebar = () => {
             className="flex items-center gap-2 text-white rounded-full px-3 py-1 bg-green-500 hover:bg-green-600"
           >
             <FaPlus className="font-bold text-lg" />
-            <span className="text-base sm:text-lg hide-on-small">Create Playlist</span>
+            <span className="text-base sm:text-lg hide-on-small">
+              Create Playlist
+            </span>
           </Link>
         </div>
         <div className="btns flex flex-wrap gap-4 mb-4">
           <Link
             to={"/"}
-            className="rounded-full ms-2 px-3 py-1 bg-white/10 text-sm sm:text-base text-white"
+            className="rounded-full px-3 py-1 bg-white/10 text-sm sm:text-base text-white"
           >
             Playlists
           </Link>
           <Link
             to={"/"}
-            className="rounded-full ms-2 px-3 py-1 bg-white/10 text-sm sm:text-base text-white"
+            className="rounded-full  px-3 py-1 bg-white/10 text-sm sm:text-base text-white"
           >
             Artists
           </Link>
@@ -85,7 +89,7 @@ const Sidebar = () => {
                 </div>
                 <div>
                   <h3 className="text-base font-medium mb-2">{p.title}</h3>
-                  <p className="text-sm text-white/80">
+                  <p className="text-sm text-white/80 ">
                     Playlist
                     <span> . {p.songs.length} Songs</span>
                   </p>
