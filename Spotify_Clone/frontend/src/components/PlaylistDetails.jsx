@@ -13,7 +13,7 @@ const PlaylistDetails = () => {
   useEffect(() => {
     const fetchPlaylistDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/playlist/${playlistId}`);
+        const response = await fetch(`https://spotify-clone-server-eta.vercel.app/${playlistId}`);
         const data = await response.json();
         
         console.log('API Response:', data); // For debugging

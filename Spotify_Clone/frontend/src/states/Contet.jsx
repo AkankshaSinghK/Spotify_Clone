@@ -23,7 +23,7 @@ export const AppProvider = ({ children }) => {
   const getUser = async () => {
     const token = JSON.parse(localStorage.getItem("token"));
     if (token) {
-      const res = await fetch("http://localhost:5000/api/user/me", {
+      const res = await fetch("https://spotify-clone-server-eta.vercel.app/api/user/me", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

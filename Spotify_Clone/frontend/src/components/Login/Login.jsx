@@ -31,7 +31,7 @@ const Login = () => {
   
 
     // Send a POST request to the backend to log in the user
-    const res = await fetch("http://localhost:5000/api/user/login", {
+    const res = await fetch("https://spotify-clone-server-eta.vercel.app/api/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

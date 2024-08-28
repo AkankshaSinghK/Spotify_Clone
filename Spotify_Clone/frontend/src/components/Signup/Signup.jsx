@@ -42,7 +42,7 @@ const Signup = () => {
       DOB,
       username,
     });
-    const res = await fetch("http://localhost:5000/api/user/register", {
+    const res = await fetch("https://spotify-clone-server-eta.vercel.app/api/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   const [playlists, setPlaylists] = useState([]);
   const getPlaylists = async () => {
-    const res = await fetch("http://localhost:5000/api/playlist/", {
+    const res = await fetch("https://spotify-clone-server-eta.vercel.app/api/playlist/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -78,6 +78,7 @@ const Sidebar = () => {
                     width={50}
                     height={50}
                     alt={p.title}
+
                   />
                 </div>
                 <div>

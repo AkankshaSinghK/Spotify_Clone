@@ -21,7 +21,7 @@ const CreatePlaylist = () => {
     // Fetch existing playlists from the server
     const fetchPlaylists = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/playlist");
+        const response = await fetch("https://spotify-clone-server-eta.vercel.app/api/playlist");
         const data = await response.json();
         setPlaylists(data.playlists || []); // Assuming response contains playlists
       } catch (error) {
